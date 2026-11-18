@@ -1,0 +1,850 @@
+{
+ "rupiah": [
+  {
+   "n": 0,
+   "text": "Rp 0"
+  },
+  {
+   "n": 7,
+   "text": "Rp 7"
+  },
+  {
+   "n": 999,
+   "text": "Rp 999"
+  },
+  {
+   "n": 1000,
+   "text": "Rp 1.000"
+  },
+  {
+   "n": 12500,
+   "text": "Rp 12.500"
+  },
+  {
+   "n": 1234567,
+   "text": "Rp 1.234.567"
+  },
+  {
+   "n": -5000,
+   "text": "-Rp 5.000"
+  },
+  {
+   "n": -1000000,
+   "text": "-Rp 1.000.000"
+  },
+  {
+   "n": 9007199254740991,
+   "text": "Rp 9.007.199.254.740.991"
+  }
+ ],
+ "parseRupiah": [
+  {
+   "text": "Rp 1.234.567",
+   "n": 1234567
+  },
+  {
+   "text": "Rp1.000",
+   "n": 1000
+  },
+  {
+   "text": "1.234",
+   "n": 1234
+  },
+  {
+   "text": "1234",
+   "n": 1234
+  },
+  {
+   "text": "-Rp 5.000",
+   "n": -5000
+  },
+  {
+   "text": "rp 25.000",
+   "n": 25000
+  },
+  {
+   "text": "  Rp 0 ",
+   "n": 0
+  }
+ ],
+ "parseRupiahInvalid": [
+  "",
+  "Rp",
+  "1.23",
+  "12.34.567",
+  "1,5",
+  "Rp 1.000,50",
+  "abc",
+  "1.2345"
+ ],
+ "ppn": [
+  {
+   "amount": 100000,
+   "mode": "exclusive",
+   "rateBP": 1100,
+   "dpp": 100000,
+   "ppn": 11000,
+   "total": 111000
+  },
+  {
+   "amount": 111000,
+   "mode": "inclusive",
+   "rateBP": 1100,
+   "dpp": 100000,
+   "ppn": 11000,
+   "total": 111000
+  },
+  {
+   "amount": 10000,
+   "mode": "inclusive",
+   "rateBP": 1100,
+   "dpp": 9009,
+   "ppn": 991,
+   "total": 10000
+  },
+  {
+   "amount": 12345,
+   "mode": "exclusive",
+   "rateBP": 1200,
+   "dpp": 12345,
+   "ppn": 1481,
+   "total": 13826
+  },
+  {
+   "amount": 249174,
+   "mode": "exclusive",
+   "rateBP": 1100,
+   "dpp": 249174,
+   "ppn": 27409,
+   "total": 276583
+  },
+  {
+   "amount": 50000,
+   "mode": "none",
+   "rateBP": 1100,
+   "dpp": 50000,
+   "ppn": 0,
+   "total": 50000
+  },
+  {
+   "amount": 5,
+   "mode": "exclusive",
+   "rateBP": 1000,
+   "dpp": 5,
+   "ppn": 1,
+   "total": 6
+  },
+  {
+   "amount": 0,
+   "mode": "inclusive",
+   "rateBP": 1100,
+   "dpp": 0,
+   "ppn": 0,
+   "total": 0
+  }
+ ],
+ "discount": [
+  {
+   "amount": 100000,
+   "discountsBP": [
+    500,
+    300
+   ],
+   "result": 92150
+  },
+  {
+   "amount": 999,
+   "discountsBP": [
+    1000
+   ],
+   "result": 899
+  },
+  {
+   "amount": 15,
+   "discountsBP": [
+    5000
+   ],
+   "result": 8
+  },
+  {
+   "amount": 230400,
+   "discountsBP": [
+    500
+   ],
+   "result": 218880
+  },
+  {
+   "amount": 256880,
+   "discountsBP": [
+    300
+   ],
+   "result": 249174
+  },
+  {
+   "amount": 1000,
+   "discountsBP": [],
+   "result": 1000
+  },
+  {
+   "amount": 80000,
+   "discountsBP": [
+    250,
+    250,
+    250
+   ],
+   "result": 74149
+  }
+ ],
+ "price": [
+  {
+   "unitPrice": 5000,
+   "qty": 2,
+   "promo": {
+    "kind": "buyxgety",
+    "buy": 1,
+    "get": 1
+   },
+   "gross": 10000,
+   "discount": 5000,
+   "free": 1,
+   "net": 5000
+  },
+  {
+   "unitPrice": 5000,
+   "qty": 3,
+   "promo": {
+    "kind": "buyxgety",
+    "buy": 1,
+    "get": 1
+   },
+   "gross": 15000,
+   "discount": 5000,
+   "free": 1,
+   "net": 10000
+  },
+  {
+   "unitPrice": 4000,
+   "qty": 5,
+   "promo": {
+    "kind": "buyxgety",
+    "buy": 2,
+    "get": 1
+   },
+   "gross": 20000,
+   "discount": 4000,
+   "free": 1,
+   "net": 16000
+  },
+  {
+   "unitPrice": 36000,
+   "qty": 1,
+   "promo": {
+    "kind": "percent",
+    "percentBP": 1000
+   },
+   "gross": 36000,
+   "discount": 3600,
+   "free": 0,
+   "net": 32400
+  },
+  {
+   "unitPrice": 3333,
+   "qty": 3,
+   "promo": {
+    "kind": "percent",
+    "percentBP": 1500
+   },
+   "gross": 9999,
+   "discount": 1500,
+   "free": 0,
+   "net": 8499
+  },
+  {
+   "unitPrice": 25000,
+   "qty": 2,
+   "promo": {
+    "kind": "amount",
+    "amount": 5000
+   },
+   "gross": 50000,
+   "discount": 10000,
+   "free": 0,
+   "net": 40000
+  },
+  {
+   "unitPrice": 3000,
+   "qty": 2,
+   "promo": {
+    "kind": "amount",
+    "amount": 5000
+   },
+   "gross": 6000,
+   "discount": 6000,
+   "free": 0,
+   "net": 0
+  },
+  {
+   "unitPrice": 8500,
+   "qty": 2,
+   "promo": {
+    "kind": "none"
+   },
+   "gross": 17000,
+   "discount": 0,
+   "free": 0,
+   "net": 17000
+  }
+ ],
+ "invoice": [
+  {
+   "lines": [
+    {
+     "qty": 24,
+     "price": 9600,
+     "discBP": 500
+    },
+    {
+     "qty": 10,
+     "price": 3800,
+     "discBP": 0
+    }
+   ],
+   "discBP": 300,
+   "mode": "exclusive",
+   "rateBP": 1100,
+   "pkp": false,
+   "totals": {
+    "gross": 268400,
+    "lineDisc": 11520,
+    "invoiceDisc": 7706,
+    "net": 249174,
+    "dpp": 249174,
+    "ppn": 27409,
+    "total": 276583
+   },
+   "landedCosts": [
+    235668,
+    40915
+   ]
+  },
+  {
+   "lines": [
+    {
+     "qty": 24,
+     "price": 9600,
+     "discBP": 500
+    },
+    {
+     "qty": 10,
+     "price": 3800,
+     "discBP": 0
+    }
+   ],
+   "discBP": 300,
+   "mode": "exclusive",
+   "rateBP": 1100,
+   "pkp": true,
+   "totals": {
+    "gross": 268400,
+    "lineDisc": 11520,
+    "invoiceDisc": 7706,
+    "net": 249174,
+    "dpp": 249174,
+    "ppn": 27409,
+    "total": 276583
+   },
+   "landedCosts": [
+    212314,
+    36860
+   ]
+  },
+  {
+   "lines": [
+    {
+     "qty": 3,
+     "price": 10000,
+     "discBP": 0
+    },
+    {
+     "qty": 3,
+     "price": 10000,
+     "discBP": 0
+    },
+    {
+     "qty": 3,
+     "price": 10000,
+     "discBP": 0
+    }
+   ],
+   "discBP": 0,
+   "mode": "inclusive",
+   "rateBP": 1100,
+   "pkp": true,
+   "totals": {
+    "gross": 90000,
+    "lineDisc": 0,
+    "invoiceDisc": 0,
+    "net": 90000,
+    "dpp": 81081,
+    "ppn": 8919,
+    "total": 90000
+   },
+   "landedCosts": [
+    27027,
+    27027,
+    27027
+   ]
+  },
+  {
+   "lines": [
+    {
+     "qty": 1,
+     "price": 100,
+     "discBP": 0
+    },
+    {
+     "qty": 1,
+     "price": 100,
+     "discBP": 0
+    },
+    {
+     "qty": 1,
+     "price": 100,
+     "discBP": 0
+    }
+   ],
+   "discBP": 0,
+   "mode": "exclusive",
+   "rateBP": 1100,
+   "pkp": false,
+   "totals": {
+    "gross": 300,
+    "lineDisc": 0,
+    "invoiceDisc": 0,
+    "net": 300,
+    "dpp": 300,
+    "ppn": 33,
+    "total": 333
+   },
+   "landedCosts": [
+    111,
+    111,
+    111
+   ]
+  },
+  {
+   "lines": [
+    {
+     "qty": 2,
+     "price": 15000,
+     "discBP": 0
+    }
+   ],
+   "discBP": 1000,
+   "mode": "none",
+   "rateBP": 0,
+   "pkp": false,
+   "totals": {
+    "gross": 30000,
+    "lineDisc": 0,
+    "invoiceDisc": 3000,
+    "net": 27000,
+    "dpp": 27000,
+    "ppn": 0,
+    "total": 27000
+   },
+   "landedCosts": [
+    27000
+   ]
+  },
+  {
+   "lines": [
+    {
+     "qty": 1,
+     "price": 100,
+     "discBP": 0
+    },
+    {
+     "qty": 1,
+     "price": 100,
+     "discBP": 0
+    },
+    {
+     "qty": 1,
+     "price": 100,
+     "discBP": 0
+    }
+   ],
+   "discBP": 3333,
+   "mode": "none",
+   "rateBP": 0,
+   "pkp": false,
+   "totals": {
+    "gross": 300,
+    "lineDisc": 0,
+    "invoiceDisc": 100,
+    "net": 200,
+    "dpp": 200,
+    "ppn": 0,
+    "total": 200
+   },
+   "landedCosts": [
+    67,
+    67,
+    66
+   ]
+  }
+ ],
+ "movingAverage": [
+  {
+   "stockQty": 100,
+   "avgCost": 300,
+   "paidQty": 100,
+   "bonusQty": 10,
+   "totalCost": 27000,
+   "result": 271
+  },
+  {
+   "stockQty": 0,
+   "avgCost": 0,
+   "paidQty": 240,
+   "bonusQty": 0,
+   "totalCost": 129600,
+   "result": 540
+  },
+  {
+   "stockQty": -5,
+   "avgCost": 500,
+   "paidQty": 10,
+   "bonusQty": 0,
+   "totalCost": 6000,
+   "result": 600
+  },
+  {
+   "stockQty": 0,
+   "avgCost": 750,
+   "paidQty": 0,
+   "bonusQty": 0,
+   "totalCost": 0,
+   "result": 750
+  },
+  {
+   "stockQty": 50,
+   "avgCost": 9800,
+   "paidQty": 24,
+   "bonusQty": 0,
+   "totalCost": 230400,
+   "result": 9735
+  }
+ ],
+ "fefo": [
+  {
+   "batches": [
+    {
+     "id": "B1",
+     "expiry": "2027-01-20",
+     "qty": 5
+    },
+    {
+     "id": "B2",
+     "expiry": "2026-12-15",
+     "qty": 3
+    },
+    {
+     "id": "B3",
+     "expiry": "2026-12-15",
+     "qty": 0
+    },
+    {
+     "id": "B4",
+     "expiry": "2028-01-01",
+     "qty": 10
+    },
+    {
+     "id": "B5",
+     "expiry": "2026-11-01",
+     "qty": 50
+    },
+    {
+     "id": "B6",
+     "expiry": "2026-12-15",
+     "qty": 4
+    }
+   ],
+   "qty": 10,
+   "today": "2026-11-18",
+   "picks": [
+    {
+     "batchID": "B2",
+     "expiry": "2026-12-15",
+     "qty": 3
+    },
+    {
+     "batchID": "B6",
+     "expiry": "2026-12-15",
+     "qty": 4
+    },
+    {
+     "batchID": "B1",
+     "expiry": "2027-01-20",
+     "qty": 3
+    }
+   ],
+   "short": 0
+  },
+  {
+   "batches": [
+    {
+     "id": "B1",
+     "expiry": "2027-01-20",
+     "qty": 5
+    },
+    {
+     "id": "B2",
+     "expiry": "2026-12-15",
+     "qty": 3
+    },
+    {
+     "id": "B3",
+     "expiry": "2026-12-15",
+     "qty": 0
+    },
+    {
+     "id": "B4",
+     "expiry": "2028-01-01",
+     "qty": 10
+    },
+    {
+     "id": "B5",
+     "expiry": "2026-11-01",
+     "qty": 50
+    },
+    {
+     "id": "B6",
+     "expiry": "2026-12-15",
+     "qty": 4
+    }
+   ],
+   "qty": 30,
+   "today": "2026-11-18",
+   "picks": [
+    {
+     "batchID": "B2",
+     "expiry": "2026-12-15",
+     "qty": 3
+    },
+    {
+     "batchID": "B6",
+     "expiry": "2026-12-15",
+     "qty": 4
+    },
+    {
+     "batchID": "B1",
+     "expiry": "2027-01-20",
+     "qty": 5
+    },
+    {
+     "batchID": "B4",
+     "expiry": "2028-01-01",
+     "qty": 10
+    }
+   ],
+   "short": 8
+  },
+  {
+   "batches": [
+    {
+     "id": "B1",
+     "expiry": "2027-01-20",
+     "qty": 5
+    },
+    {
+     "id": "B2",
+     "expiry": "2026-12-15",
+     "qty": 3
+    },
+    {
+     "id": "B3",
+     "expiry": "2026-12-15",
+     "qty": 0
+    },
+    {
+     "id": "B4",
+     "expiry": "2028-01-01",
+     "qty": 10
+    },
+    {
+     "id": "B5",
+     "expiry": "2026-11-01",
+     "qty": 50
+    },
+    {
+     "id": "B6",
+     "expiry": "2026-12-15",
+     "qty": 4
+    }
+   ],
+   "qty": 2,
+   "today": "2026-12-15",
+   "picks": [
+    {
+     "batchID": "B2",
+     "expiry": "2026-12-15",
+     "qty": 2
+    }
+   ],
+   "short": 0
+  },
+  {
+   "batches": [
+    {
+     "id": "B1",
+     "expiry": "2027-01-20",
+     "qty": 5
+    },
+    {
+     "id": "B2",
+     "expiry": "2026-12-15",
+     "qty": 3
+    },
+    {
+     "id": "B3",
+     "expiry": "2026-12-15",
+     "qty": 0
+    },
+    {
+     "id": "B4",
+     "expiry": "2028-01-01",
+     "qty": 10
+    },
+    {
+     "id": "B5",
+     "expiry": "2026-11-01",
+     "qty": 50
+    },
+    {
+     "id": "B6",
+     "expiry": "2026-12-15",
+     "qty": 4
+    }
+   ],
+   "qty": 5,
+   "today": "2026-12-16",
+   "picks": [
+    {
+     "batchID": "B1",
+     "expiry": "2027-01-20",
+     "qty": 5
+    }
+   ],
+   "short": 0
+  },
+  {
+   "batches": [
+    {
+     "id": "B1",
+     "expiry": "2027-01-20",
+     "qty": 5
+    },
+    {
+     "id": "B2",
+     "expiry": "2026-12-15",
+     "qty": 3
+    },
+    {
+     "id": "B3",
+     "expiry": "2026-12-15",
+     "qty": 0
+    },
+    {
+     "id": "B4",
+     "expiry": "2028-01-01",
+     "qty": 10
+    },
+    {
+     "id": "B5",
+     "expiry": "2026-11-01",
+     "qty": 50
+    },
+    {
+     "id": "B6",
+     "expiry": "2026-12-15",
+     "qty": 4
+    }
+   ],
+   "qty": 0,
+   "today": "2026-11-18",
+   "picks": [],
+   "short": 0
+  }
+ ],
+ "reorderPoint": [
+  {
+   "sold": 600,
+   "days": 30,
+   "leadDays": 2,
+   "safetyDays": 3,
+   "result": 100
+  },
+  {
+   "sold": 7,
+   "days": 30,
+   "leadDays": 2,
+   "safetyDays": 3,
+   "result": 2
+  },
+  {
+   "sold": 0,
+   "days": 30,
+   "leadDays": 2,
+   "safetyDays": 3,
+   "result": 0
+  },
+  {
+   "sold": 100,
+   "days": 0,
+   "leadDays": 2,
+   "safetyDays": 3,
+   "result": 0
+  },
+  {
+   "sold": 31,
+   "days": 30,
+   "leadDays": 1,
+   "safetyDays": 0,
+   "result": 2
+  }
+ ],
+ "orderPacks": [
+  {
+   "stock": 30,
+   "target": 100,
+   "packSize": 100,
+   "result": 1
+  },
+  {
+   "stock": 100,
+   "target": 100,
+   "packSize": 100,
+   "result": 0
+  },
+  {
+   "stock": 0,
+   "target": 250,
+   "packSize": 100,
+   "result": 3
+  },
+  {
+   "stock": -10,
+   "target": 90,
+   "packSize": 10,
+   "result": 10
+  },
+  {
+   "stock": 5,
+   "target": 6,
+   "packSize": 0,
+   "result": 0
+  }
+ ]
+}

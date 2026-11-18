@@ -1,0 +1,13 @@
+{
+  "name": "@keleeeep/hitung",
+  "version": "0.1.0",
+  "description": "Indonesian retail and pharmacy arithmetic: rupiah, PPN, discounts, invoice totals, landed cost, promos, moving-average cost, FEFO, reorder points.",
+  "type": "module",
+  "exports": "./src/index.js",
+  "files": ["src"],
+  "scripts": { "test": "node --test test/" },
+  "engines": { "node": ">=18" },
+  "keywords": ["rupiah", "ppn", "indonesia", "invoice", "pharmacy", "fefo", "pos"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/keleeeep/hitung.git", "directory": "js" }
+}
