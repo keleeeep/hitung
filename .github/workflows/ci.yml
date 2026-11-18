@@ -4,6 +4,7 @@ jobs:
   go:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         go: ['1.22', 'stable']
     steps:
@@ -17,6 +18,7 @@ jobs:
   js:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         node: [18, 22]
     steps:
